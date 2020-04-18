@@ -3,11 +3,14 @@ package main.com.java.sg.singtel.codility;
 import main.com.java.sg.singtel.codility.impl.Bird;
 import main.com.java.sg.singtel.codility.impl.Cat;
 import main.com.java.sg.singtel.codility.impl.Chicken;
+import main.com.java.sg.singtel.codility.impl.Clownfish;
 import main.com.java.sg.singtel.codility.impl.Dog;
+import main.com.java.sg.singtel.codility.impl.Dolphin;
 import main.com.java.sg.singtel.codility.impl.Duck;
 import main.com.java.sg.singtel.codility.impl.Parrot;
 import main.com.java.sg.singtel.codility.impl.Rooster;
 import main.com.java.sg.singtel.codility.impl.RoosterDelegation;
+import main.com.java.sg.singtel.codility.impl.Shark;
 
 public class Solution {
 	public static void main(String[] args) {
@@ -77,6 +80,32 @@ public class Solution {
  		myParrotWithDucks.fly(); 
  		myParrotWithDucks.sing(); 
  		
+ 		//Model fish as well as other swimming animals 
+ 		 System.out.println("----------------SHARK----------------"); 
+ 	 	   Shark mySFish = new Shark(); 
+ 	 	   mySFish.fly(); 
+ 	 	   mySFish.sing(); 
+ 	 	   mySFish.walk(); 
+ 	 	   mySFish.swim(); 
+ 	 	   mySFish.colour(); 
+ 	 	   mySFish.eat(); 
+ 	 	   mySFish.makeJokes(); 
+ 	 	   System.out.println("----------------CLOWNFISH----------------"); 
+ 	 	   Clownfish myCFish = new Clownfish(); 
+ 	 	   myCFish.fly(); 
+ 	 	   myCFish.sing(); 
+ 	 	   myCFish.walk(); 
+ 	 	   myCFish.swim(); 
+ 	 	   myCFish.colour(); 
+ 	 	   myCFish.eat(); 
+ 	 	   myCFish.makeJokes(); 
+ 	 	   System.out.println("----------------DOLPHIN----------------"); 
+ 	 	   Dolphin dolphin = new Dolphin(); 
+ 	 	   dolphin.hasFishBehaviour(new Shark()); 
+ 	 	   dolphin.fly(); 
+ 	 	   dolphin.sing(); 
+ 	 	   dolphin.swim(); 
+ 	 	   dolphin.walk(); 
 
 	}
 
