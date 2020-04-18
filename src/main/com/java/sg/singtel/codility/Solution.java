@@ -1,8 +1,11 @@
 package main.com.java.sg.singtel.codility;
 
 import main.com.java.sg.singtel.codility.impl.Bird;
+import main.com.java.sg.singtel.codility.impl.Cat;
 import main.com.java.sg.singtel.codility.impl.Chicken;
+import main.com.java.sg.singtel.codility.impl.Dog;
 import main.com.java.sg.singtel.codility.impl.Duck;
+import main.com.java.sg.singtel.codility.impl.Parrot;
 import main.com.java.sg.singtel.codility.impl.Rooster;
 import main.com.java.sg.singtel.codility.impl.RoosterDelegation;
 
@@ -41,7 +44,38 @@ public class Solution {
  		myRoosterDel.fly(); 
  		myRoosterDel.sing(); 
  		
+ 	// Question 4
  		
+ 		System.out.println("----------------PARROT LIVING WITH DOGS----------------"); 
+ 		Parrot myParrotwithDogs =  new Parrot(); 
+ 		myParrotwithDogs.livingWith(new Dog()); 
+ 		myParrotwithDogs.walk(); 
+ 		myParrotwithDogs.fly(); 
+ 		myParrotwithDogs.sing();
+ 		
+ 		System.out.println("----------------PARROT LIVING WITH CATS----------------"); 
+ 		
+ 		Parrot myParrotwithCats =  new Parrot(); 
+ 		myParrotwithCats.livingWith(new Cat()); 
+ 		myParrotwithCats.walk(); 
+ 		myParrotwithCats.fly(); 
+ 		myParrotwithCats.sing(); 
+ 		
+ 		System.out.println("----------------PARROT LIVING WITH ROOSTERS----------------"); 
+ 		
+ 		Parrot myParrotWithRoosters =  new Parrot(); 
+ 		myParrotWithRoosters.livingWith(new Rooster()); 
+ 		myParrotWithRoosters.walk(); 
+ 		myParrotWithRoosters.fly(); 
+ 		myParrotWithRoosters.sing(); 
+ 		
+ 	    System.out.println("----------------PARROT LIVING WITH DUCKS----------------"); 
+ 	
+ 	    Parrot myParrotWithDucks =  new Parrot(); 
+ 		myParrotWithDucks.livingWith(new Duck()); 
+ 		myParrotWithDucks.walk(); 
+ 		myParrotWithDucks.fly(); 
+ 		myParrotWithDucks.sing(); 
  		
 
 	}
