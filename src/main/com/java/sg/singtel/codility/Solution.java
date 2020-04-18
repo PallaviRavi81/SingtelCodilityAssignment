@@ -1,6 +1,7 @@
 package main.com.java.sg.singtel.codility;
 
 import main.com.java.sg.singtel.codility.impl.Bird;
+import main.com.java.sg.singtel.codility.impl.Butterfly;
 import main.com.java.sg.singtel.codility.impl.Cat;
 import main.com.java.sg.singtel.codility.impl.Chicken;
 import main.com.java.sg.singtel.codility.impl.Clownfish;
@@ -106,6 +107,20 @@ public class Solution {
  	 	   dolphin.sing(); 
  	 	   dolphin.swim(); 
  	 	   dolphin.walk(); 
+ 	 	   
+ 	 	   //D.	Model animals that change their behaviour over time 
+ 	 	   System.out.println("----------------BUTTERFLY----------------"); 
+ 	 	   Butterfly myButterFly =  new Butterfly(); 
+ 	 	   myButterFly.setCaterpiller(false); 
+ 	 	   myButterFly.fly(); 
+ 	 	   myButterFly.sing(); 
+ 	 	   myButterFly.walk(); 
+ 	 	   System.out.println("----------------CATERPILLAR----------------"); 
+ 	 	   Butterfly myCaterpillar =  new Butterfly(); 
+ 	 	   myCaterpillar.setCaterpiller(true); 
+ 	 	   myCaterpillar.fly(); 
+ 	 	   myCaterpillar.sing(); 
+ 	 	   myCaterpillar.walk(); 
 
 	}
 
