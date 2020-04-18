@@ -1,5 +1,8 @@
 package main.com.java.sg.singtel.codility;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import main.com.java.sg.singtel.codility.impl.Bird;
 import main.com.java.sg.singtel.codility.impl.Butterfly;
 import main.com.java.sg.singtel.codility.impl.Cat;
@@ -156,6 +159,23 @@ public class Solution {
  	 	   System.out.println("Number of Animals that can walk: " + countWalk); 
  	 	   System.out.println("Number of Animals that can sing: " + countSing); 
  	 	   System.out.println("Number of Animals that can swim: " + countSwim); 
+ 	 	   
+ 	 	 System.out.println("---------------------------Test Language- ROOSTER--------------------");  
+ 	    
+ 	 	   Rooster myRstr = new Rooster(); 
+ 	 	   List<String> arrayList = new ArrayList<String>(){{ 
+ 	 		    add("English"); 
+ 	 	        add("Tamil");  	 	       
+ 	 	        add("Japanese");  	 	      
+ 	 	        add("Urdu"); 
+ 	 		}};  
+ 	 		 
+ 	 		for (String lang : arrayList) { 
+ 	 			myRstr.sing(lang); 
+ 	 		} 	   
+ 	 	   
 	}
+	
+	   
 
 }
