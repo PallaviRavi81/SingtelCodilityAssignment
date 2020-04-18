@@ -1,15 +1,13 @@
 package main.com.java.sg.singtel.codility.impl;
 
-import main.com.java.sg.singtel.codility.Animal;
-
-public class Bird implements Animal {
+public class Duck extends Bird {
 	
 	public boolean fly() {
 		System.out.println("I am flying");
 		return true;
 	}
 	public boolean sing() {
-		System.out.println("I am Singing");
+		System.out.println("Quack, quack");
 		return true;
 	}
 	@Override
@@ -18,9 +16,9 @@ public class Bird implements Animal {
 		return true;
 	}
 	@Override
-	public boolean swim() {	
-		System.out.println("I cannot swim"); 
-		return false;
+	public boolean swim() {
+		System.out.println("I can swim");
+		return true;
 	}
-
+	
 }
